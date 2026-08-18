@@ -45,7 +45,7 @@ export default function Header() {
               LOGO
           ========================== */}
           <Link
-            href="./"
+            href="#"
             className="
               group flex items-center gap-3
               animate-fade-in
