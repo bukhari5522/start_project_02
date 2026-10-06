@@ -258,7 +258,7 @@ export default function AboutPage() {
                   "
                 >
                   <p className="text-3xl font-extrabold text-brand-accent">
-                    Experinced
+                    experienced
                   </p>
 
                   <p className="mt-1 text-sm text-brand-surface/60"></p>
