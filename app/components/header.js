@@ -11,23 +11,27 @@ export default function Header() {
   const navItems = [
     {
       name: "Home",
-      href: "#",
+      href: "/",
     },
     {
       name: "About",
-      href: "#about",
+      href: "/#about",
     },
     {
       name: "Services",
-      href: "#services",
+      href: "/#services",
     },
     {
       name: "Projects",
-      href: "#projects",
+      href: "/#projects",
+    },
+    {
+      name: "Our Team",
+      href: "/our-team",
     },
     {
       name: "Contact Us",
-      href: "#contactus",
+      href: "/#contactus",
     },
   ];
 
@@ -45,7 +49,7 @@ export default function Header() {
               LOGO
           ========================== */}
           <Link
-            href="#"
+            href="/"
             className="
               group flex items-center gap-3
               animate-fade-in
@@ -64,13 +68,13 @@ export default function Header() {
               "
             >
               <span className="text-xl font-black text-brand-surface">
-                <Image src={logoImage} />
+                <Image src={logoImage} alt="PigeonsPower logo" />
               </span>
             </div>
 
             {/* Logo Text */}
             <div className="leading-tight">
-              <h1
+              <p
                 className="
                   text-lg
                   font-extrabold
@@ -80,7 +84,7 @@ export default function Header() {
               >
                 Pigeons
                 <span className="text-brand-secondary">Power</span>
-              </h1>
+              </p>
 
               <p
                 className="
@@ -137,7 +141,7 @@ export default function Header() {
           ========================== */}
           <div className="hidden lg:block">
             <Link
-              href="#contactus"
+              href="/#contactus"
               className="
                 inline-flex
                 items-center
@@ -286,7 +290,7 @@ export default function Header() {
 
             {/* Mobile Contact Button */}
             <Link
-              href="/contact"
+              href="/#contactus"
               onClick={() => setIsMenuOpen(false)}
               className="
                 mt-5

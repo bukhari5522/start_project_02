@@ -72,7 +72,7 @@ export default function Hero() {
               <div className="absolute right-0 top-0 h-[420px] w-[360px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <Image
                   src={towerImage}
-                  alt="Construction project"
+                  alt="Electrical transmission tower at sunset"
                   className="h-full w-full object-cover"
                 />
               </div>

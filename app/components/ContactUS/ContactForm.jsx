@@ -20,7 +20,7 @@ const services = [
   "Engineering Consultancy",
   "Cost Estimation",
   "Quantity Takeoff",
-  "LUC Assessment Services",
+  "Lux Assessment Services",
   "Other",
 ];
 

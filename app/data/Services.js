@@ -2,6 +2,7 @@ const services = [
   {
     number: "01",
     title: "Electrical Distribution Design",
+    slug: "electrical-engineering",
     description:
       "PigeonsPower offers a wide range of design services including",
     category: "Electrical",
@@ -20,6 +21,7 @@ const services = [
   {
     number: "02",
     title: "Public Lighting Design ",
+    slug: "public-lighting-design",
     description:
       "PigeonsPower offers a wide range of Public Lighting Design services including",
     category: "Infrastructure",
@@ -34,6 +36,7 @@ const services = [
   {
     number: "03",
     title: "Temporary Public Lighting Design",
+    slug: "temporary-public-lighting-design",
     description:
       "PigeonsPower offers a wide range of Temporary Public Lighting Design services including",
     category: "Infrastructure",
@@ -49,6 +52,7 @@ const services = [
   {
     number: "04",
     title: "Project Management",
+    slug: "project-management",
     description:
       "PigeonsPower offers a wide range of Project Management services including: ",
     category: "Management",
@@ -72,6 +76,7 @@ const services = [
   {
     number: "05",
     title: " Electrical Detailing & Drafting",
+    slug: "electrical-detailing-and-drafting",
     description:
       "PigeonsPower offers a wide range of Detailing & Drafting services including",
     category: "Consultancy",
@@ -87,6 +92,7 @@ const services = [
   {
     number: "06",
     title: "Telecommunication Design (NBN, Telstra, Optus)",
+    slug: "telecommunication-design",
     description:
       "PigeonsPower offers a wide range of Telecommunication design services including",
     category: "Infrastructure",
@@ -101,8 +107,9 @@ const services = [
   },
 
   {
-    number: "09",
+    number: "07",
     title: "Engineering Consultancy",
+    slug: "engineering-consultancy",
     description:
       "Professional engineering consultancy services providing technical advice, design review, project support, and practical engineering solutions to ensure projects are safe, compliant, cost-effective, and delivered to the required standards.",
     category: "Engineering",
@@ -130,6 +137,7 @@ const services = [
   {
     number: "08",
     title: "Quantity Takeoff",
+    slug: "quantity-takeoff",
     description:
       "Precise measurement and material quantification for tendering, procurement and construction.",
     category: "Estimating",
@@ -144,8 +152,9 @@ const services = [
     ],
   },
   {
-    number: "10",
+    number: "09",
     title: "Cost Estimation",
+    slug: "cost-estimation",
     description:
       "PigeonsPower offers a wide range of Telecommunication design services including",
     category: "Cost Management",

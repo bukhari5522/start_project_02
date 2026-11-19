@@ -7,8 +7,10 @@ export default function ServiceCard({ service }) {
 
   return (
     <article
+      id={service.slug}
       className="
         group
+        scroll-mt-28
         self-start
         overflow-hidden
         rounded-brand-lg
@@ -313,7 +315,7 @@ export default function ServiceCard({ service }) {
                   text-brand-muted
                 "
               >
-                What's Included
+                What&apos;s Included
               </p>
 
               <ul className="mt-3 space-y-2">

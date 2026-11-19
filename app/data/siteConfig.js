@@ -1,18 +1,19 @@
 export const siteConfig = {
-  name: "Your Company Name",
+  name: "PigeonsPower",
 
-  shortName: "YCN",
+  shortName: "PigeonsPower",
 
-  tagline: "Engineering Solutions",
+  tagline: "Electrical Engineering Consultancy",
 
   description:
     "Professional electrical engineering, network design, project management, cost estimation and technical consultancy across Australia.",
 
-  url: "https://pigeonspower.com.au",
+  url: "https://www.pigeonspower.com.au",
 
   contact: {
-    email: "info@pigeonspower.com.au",
-    phone: "+61 XXX XXX XXX",
+    email: "info@pigeonspower.com",
+    phone: "+61 419 663 260",
+    address: "1-Chindwin Place, Roxburgh Park VIC 3064, Australia",
   },
 
   navigation: [
@@ -22,50 +23,54 @@ export const siteConfig = {
     },
     {
       name: "About",
-      href: "/about",
+      href: "/#about",
     },
     {
       name: "Services",
-      href: "/services",
+      href: "/#services",
     },
     {
       name: "Projects",
-      href: "/projects",
+      href: "/#projects",
+    },
+    {
+      name: "Our Team",
+      href: "/our-team",
     },
     {
       name: "Contact Us",
-      href: "/contact",
+      href: "/#contactus",
     },
   ],
 
   services: [
     {
       name: "Electrical Engineering",
-      href: "/services#electrical-engineering",
+      href: "/#electrical-engineering",
     },
     {
       name: "National Broadband Network (NBN)",
-      href: "/services#nbn",
+      href: "/#telecommunication-design",
     },
     {
       name: "Project Management",
-      href: "/services#project-management",
+      href: "/#project-management",
     },
     {
       name: "Engineering Consultancy",
-      href: "/services#engineering-consultancy",
+      href: "/#engineering-consultancy",
     },
     {
       name: "Cost Estimation",
-      href: "/services#cost-estimation",
+      href: "/#cost-estimation",
     },
     {
       name: "Quantity Takeoff",
-      href: "/services#quantity-takeoff",
+      href: "/#quantity-takeoff",
     },
     {
-      name: "LUC Assessment Services",
-      href: "/services#luc-assessment",
+      name: "Lux Assessment Services",
+      href: "/#public-lighting-design",
     },
   ],
 

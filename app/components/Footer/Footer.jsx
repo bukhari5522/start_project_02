@@ -1,14 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
+import logoImage from "@/public/pigeons.jpeg";
 
 const navigation = [
   {
     title: "Company",
     links: [
       { label: "Home", href: "/" },
-      { label: "About Us", href: "#about" },
-      { label: "Services", href: "#services" },
-      { label: "Projects", href: "#projects" },
-      { label: "Contact Us", href: "#contactus" },
+      { label: "About Us", href: "/#about" },
+      { label: "Services", href: "/#services" },
+      { label: "Projects", href: "/#projects" },
+      { label: "Our Team", href: "/our-team" },
+      { label: "Contact Us", href: "/#contactus" },
     ],
   },
   {
@@ -16,23 +19,23 @@ const navigation = [
     links: [
       {
         label: "Electrical Engineering",
-        href: "/services#electrical-engineering",
+        href: "/#electrical-engineering",
       },
       {
         label: "NBN",
-        href: "/services#nbn",
+        href: "/#telecommunication-design",
       },
       {
         label: "Project Management",
-        href: "/services#project-management",
+        href: "/#project-management",
       },
       {
         label: "Cost Estimation",
-        href: "/services#cost-estimation",
+        href: "/#cost-estimation",
       },
       {
         label: "Quantity Takeoff",
-        href: "/services#quantity-takeoff",
+        href: "/#quantity-takeoff",
       },
     ],
   },
@@ -92,12 +95,12 @@ export default function Footer() {
                   items-center
                   justify-center
 
+                  overflow-hidden
+
                   rounded-brand
 
                   border
                   border-brand-surface/10
-
-                  bg-brand-secondary
 
                   shadow-brand-button
 
@@ -107,15 +110,11 @@ export default function Footer() {
                   group-hover:-translate-y-1
                 "
               >
-                <span
-                  className="
-                    text-lg
-                    font-extrabold
-                    text-brand-surface
-                  "
-                >
-                  E
-                </span>
+                <Image
+                  src={logoImage}
+                  alt="PigeonsPower logo"
+                  className="h-full w-full object-cover"
+                />
               </div>
 
               {/* Brand Name */}
@@ -127,21 +126,24 @@ export default function Footer() {
                     text-base
                     font-extrabold
                     tracking-wide
+                    text-brand-surface
                   "
                 >
-                  Engineering
+                  Pigeons
+                  <span className="text-brand-secondary-light">Power</span>
                 </span>
 
                 <span
                   className="
                     block
-                    text-xs
+                    text-[10px]
                     font-medium
+                    uppercase
                     tracking-[0.18em]
-                    text-brand-secondary-light
+                    text-brand-surface/60
                   "
                 >
-                  SOLUTIONS
+                  Electrical Engineering Consultancy
                 </span>
               </div>
             </Link>
@@ -332,7 +334,7 @@ export default function Footer() {
             {/* CTA */}
 
             <Link
-              href="#contactus"
+              href="/#contactus"
               className="
                 mt-6
                 inline-flex
