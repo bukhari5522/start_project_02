@@ -27,7 +27,7 @@ export default function AboutPage() {
               About PigeonsPower
             </span>
 
-            <h1
+            <h2
               className="
                 mt-6
                 text-4xl
@@ -44,7 +44,7 @@ export default function AboutPage() {
               <span className="block text-brand-accent">
                 Powering Better Futures.
               </span>
-            </h1>
+            </h2>
 
             <p
               className="

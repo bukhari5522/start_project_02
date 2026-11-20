@@ -30,7 +30,7 @@ export default function ContactHero() {
             </span>
           </div>
 
-          <h1
+          <h2
             className="
               mt-6
               text-4xl
@@ -46,7 +46,7 @@ export default function ContactHero() {
             <span className="block text-brand-secondary-light">
               your next project.
             </span>
-          </h1>
+          </h2>
 
           <p
             className="

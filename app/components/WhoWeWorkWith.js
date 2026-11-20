@@ -1,3 +1,4 @@
+import Image from "next/image";
 import networks from "@/app/data/networks";
 
 export default function WhoWeWorkWith() {
@@ -30,50 +31,24 @@ export default function WhoWeWorkWith() {
               sm:text-4xl
             "
           >
-            Aligned with Australia&rsquo;s leading networks.
+            Aligned with Victoria&rsquo;s leading networks.
           </h2>
 
           <p className="mt-5 leading-7 text-brand-muted">
             We deliver electrical design, drafting and consultancy services in
             accordance with the standards, specifications and requirements of
-            Australia&rsquo;s electricity distribution networks and national
-            telecommunications infrastructure.
+            Victoria&rsquo;s electricity distribution networks and NBN Co.
           </p>
         </div>
 
         {/* =====================================================
-            NETWORK GROUPS
+            NETWORK LOGOS
+            One uniform white tile per company, logo fitted inside
+            so every brand reads cleanly at the same size.
         ===================================================== */}
-        <div
-          className="
-            mt-14
-            grid
-            gap-6
-
-            md:grid-cols-2
-            lg:grid-cols-3
-          "
-        >
+        <div className="mt-14 space-y-10">
           {networks.map((group) => (
-            <div
-              key={group.region}
-              className="
-                group
-                rounded-brand-lg
-                border
-                border-brand-border
-                bg-brand-surface
-                p-7
-
-                shadow-brand-sm
-
-                transition-all
-                duration-300
-
-                hover:-translate-y-1
-                hover:shadow-brand
-              "
-            >
+            <div key={group.region}>
               <div className="flex items-center gap-3">
                 <span className="h-6 w-1 rounded-full bg-brand-accent" />
 
@@ -90,17 +65,53 @@ export default function WhoWeWorkWith() {
                 </h3>
               </div>
 
-              <ul className="mt-5 space-y-3">
-                {group.companies.map((company) => (
-                  <li key={company} className="flex items-center gap-3">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-accent" />
+              <div
+                className="
+                  mt-5
+                  grid
+                  grid-cols-2
+                  gap-4
 
-                    <span className="font-bold text-brand-heading">
-                      {company}
-                    </span>
-                  </li>
+                  sm:grid-cols-3
+                  lg:grid-cols-5
+                "
+              >
+                {group.companies.map((company) => (
+                  <div
+                    key={company.name}
+                    title={company.name}
+                    className="
+                      flex
+                      h-28
+                      items-center
+                      justify-center
+                      rounded-brand-lg
+                      border
+                      border-brand-border
+                      bg-white
+                      p-4
+
+                      shadow-brand-sm
+
+                      transition-all
+                      duration-300
+
+                      hover:-translate-y-1
+                      hover:shadow-brand
+                    "
+                  >
+                    <div className="relative h-full w-full">
+                      <Image
+                        src={company.logo}
+                        alt={`${company.name} logo`}
+                        fill
+                        sizes="(max-width: 640px) 40vw, (max-width: 1024px) 28vw, 180px"
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>

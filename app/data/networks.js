@@ -1,8 +1,13 @@
 // Who We Work With — the networks whose standards our work is aligned with.
 //
-// Edit this one file to add, remove or reorder a network. Each group is a
-// state/territory (or Telecommunications); companies render as styled text
-// in the site's typography — no third-party logos are used.
+// Owner instruction 20 Nov 2026: Victorian distribution companies ONLY,
+// plus NBN Co, each shown WITH its logo. All other states and telecom
+// names were removed in this revision.
+//
+// Edit this one file to add, remove or reorder a network. Logos live in
+// /public/networks/ — cropped by Muse from the owner's images
+// (Victorian banner + NBN screenshot, sent 20 Nov 2026), white background,
+// one file per company.
 //
 // The framing is deliberate: PigeonsPower prepares design, drafting and
 // consultancy work in accordance with each network's standards,
@@ -10,40 +15,18 @@
 
 const networks = [
   {
-    region: "Victoria",
-    companies: ["CitiPower", "Powercor", "AusNet Services", "United Energy", "Jemena"],
-  },
-  {
-    region: "New South Wales",
-    companies: ["Ausgrid", "Endeavour Energy", "Essential Energy"],
-  },
-  {
-    region: "Queensland",
-    companies: ["Energex", "Ergon Energy"],
-  },
-  {
-    region: "South Australia",
-    companies: ["SA Power Networks"],
-  },
-  {
-    region: "Western Australia",
-    companies: ["Western Power", "Horizon Power"],
-  },
-  {
-    region: "Tasmania",
-    companies: ["TasNetworks"],
-  },
-  {
-    region: "Australian Capital Territory",
-    companies: ["Evoenergy"],
-  },
-  {
-    region: "Northern Territory",
-    companies: ["Power and Water Corporation"],
+    region: "Victoria — Electricity Distribution",
+    companies: [
+      { name: "CitiPower", logo: "/networks/citipower.png" },
+      { name: "Powercor", logo: "/networks/powercor.png" },
+      { name: "AusNet Services", logo: "/networks/ausnet.png" },
+      { name: "United Energy", logo: "/networks/united-energy.png" },
+      { name: "Jemena", logo: "/networks/jemena.png" },
+    ],
   },
   {
     region: "Telecommunications",
-    companies: ["NBN Co", "Telstra", "Optus", "TPG Telecom"],
+    companies: [{ name: "NBN Co", logo: "/networks/nbn.png" }],
   },
 ];
 

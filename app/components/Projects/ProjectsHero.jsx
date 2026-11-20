@@ -44,7 +44,7 @@ export default function ProjectsHero() {
             </span>
           </div>
 
-          <h1
+          <h2
             className="
               mt-6
 
@@ -63,7 +63,7 @@ export default function ProjectsHero() {
             <span className="block text-brand-secondary-light">
               designed for reliable delivery.
             </span>
-          </h1>
+          </h2>
 
           <p
             className="
