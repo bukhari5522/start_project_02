@@ -29,7 +29,7 @@ const team = [
     name: "Shoaib Rasool",
     role: "Electrical Designer & Draftsman",
     bio: "Shoaib prepares electrical designs and drafting for distribution networks, public lighting and development projects. He turns survey and civil drawings into clean, standards-compliant electrical designs that are ready for approval and construction.",
-    photo: "/team/shoaib-rasool.jpg",
+    photo: "/team/shoaib-rasool.png",
   },
   {
     name: "Arqam",
