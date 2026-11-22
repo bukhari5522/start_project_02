@@ -17,13 +17,13 @@ const team = [
     name: "Syed Sheece Bukhari",
     role: "Director",
     bio: "Syed leads PigeonsPower and oversees the delivery of every project the company undertakes. His focus is simple: engineering that is safe, compliant and built to last — and client relationships built on trust, clear communication and work delivered as promised.",
-    photo: "/team/syed-sheece-bukhari.jpg",
+    photo: "/team/syed-sheece-bukhari.png",
   },
   {
     name: "Ammar Abdullah",
     role: "Electrical Engineer",
     bio: "Ammar designs overhead and underground electrical distribution networks for residential, commercial and industrial developments. His work covers customer connections, network upgrades and development infrastructure, prepared to NSP requirements and Australian standards.",
-    photo: "/team/ammar-abdullah.jpg",
+    photo: "/team/ammar-abdullah.png",
   },
   {
     name: "Shoaib Rasool",
@@ -35,7 +35,7 @@ const team = [
     name: "Arqam",
     role: "Civil Estimator",
     bio: "Arqam prepares quantity take-offs and cost estimates for civil and electrical infrastructure projects. From first measurement to final tender figures, he builds accurate and transparent project budgets that clients can rely on.",
-    photo: "/team/arqam.jpg",
+    photo: "/team/arqam.png",
   },
 ];
 
